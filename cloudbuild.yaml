@@ -1,12 +1,12 @@
 steps:
 # Install
-- name: 'gcr.io/cloud-builders/npm'
+- name: 'gcr.io/nichecloudexpert-1904/npm'
   args: ['install']
 # Test
-- name: 'gcr.io/cloud-builders/npm'
+- name: 'gcr.io/nichecloudexpert-1904/npm'
   args: ['run', 'test:unit']
 # Build
-- name: 'gcr.io/cloud-builders/npm'
+- name: 'gcr.io/nichecloudexpert-1904/npm'
   args: ['run', 'build']
 # Deploy
 - name: 'gcr.io/$PROJECT_ID/firebase'
